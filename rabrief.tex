@@ -1,0 +1,69 @@
+% This template is written by Roman Asendorf <roman.asendorf@googlemail.com>
+% and matches the rabrief class
+%
+% and licensed by the Creative Commons Attribution 3.0 Unported
+% http://creativecommons.org/licenses/by/3.0/
+% 
+% created: 2009-01-09
+% updated: 2009-02-23
+%
+
+\documentclass[]{rabrief}
+% Use option  english  above to use English labels for phone, email, ...
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+
+% set the width of the "from" column by using the width of a given text
+% should only be neccessary, if it cannot be automatically detected (e.g. with
+% multiline fromstreet)
+\settowidth{\fromwidth}{}
+
+% --- Mandatory fields ---
+\fromname{firstName lastName}
+\fromstreet[street no.]{street no.}
+\fromcity[cityName]{cityName}
+\fromcitycode{12345}
+% --- Non-Mandatory fields ---
+\frommobile{01\,23\,-\,456\,78\,90}
+\fromphone{01\,23\,-\,456\,78\,90}
+%\fromfax{01\,23\,-\,456\,78\,90}
+\fromemail{userName@provider.com}
+%\fromcustomer{customer no.}
+%\fromcitycc{D}
+%\fromcountry{Germany}
+
+% --- Mandatory fields ---
+\toname{name}
+\tosubname{additional namespace}
+\tostreet{street no.}
+\tocitycode{12345}
+\tocity{City}
+%\tofax{01\,23\,-\,456\,78\,90}
+%\toemail{userName@provider.com}
+%\tocitycc{D}
+%\tocountry{Germany}
+
+% Set the date to get a fixed date, not set = date of today
+%\date{05. Januar 2009}
+\subject{The letters subject}
+\greeting{Sehr geehrte Damen und Herren,}
+\leave{Mit freundlichen Grüßen}
+
+% Set the put x,y-coordinates to correct the sign position
+%\sign{\put(150,7){\includegraphics[height=2cm]{Signatur}}}
+
+\begin{document}
+\begin{letter}
+The letters main content \ldots
+
+\end{letter}
+
+% If you have attachments to this letter, add this part
+% enlargethispage moves the attachment near the bottom line
+\enlargethispage{3.5cm}
+\begin{attachment}
+page 1, page 2
+\end{attachment}
+
+\end{document}

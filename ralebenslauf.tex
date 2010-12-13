@@ -1,0 +1,60 @@
+\documentclass[]{ralebenslauf}
+% use option  english  above to use English labels for phone, email, ...
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+
+\hyphenation{words you need hyphenation for}
+
+\fromlastname{lastname}
+\fromfirstname{name}
+\fromstreet{street No.}
+\fromcity{hometown}
+\fromcitycode{12345}
+\frombirthday{01/01/19xx}
+\frombirthlocation{city where you were born}
+\fromfamily{family status}
+\frommobile{01\,23\,-\,456\,78\,90}
+\fromphone{01\,23\,-\,456\,78\,90}
+\fromemail{userName@provider.com}
+
+\photo{\includegraphics[height=5cm]{Photo_LowQ}}
+\sign{\put(130,13){\includegraphics[height=2cm]{Signatur}}}
+
+\begin{document}
+\begin{curvit}
+
+   \begin{tableSection*}{Schools}
+    year & last school\'s name
+  \end{tableSection*}
+
+  \begin{tableSection*}{Apprenticeship}
+    from  – till & kind of apprenticeship
+  \end{tableSection*}
+
+  \begin{tableSection*}{Workexperiences}
+    from - till & kind of work, where
+  \end{tableSection*}
+
+  \begin{tableSection*}{Study}
+    from - till & subject, where, diploma thesis, ends
+    \end{tableSection*}
+
+  \begin{tableSection*}{Languages}
+   	language experiences
+   \end{tableSection*}
+
+  \begin{tableSection*}{Haves}
+   	certificates, computer knowledge, social experience, etc.
+   \end{tableSection*}
+
+  \begin{tinySection*}{Additional haves}
+	drivers license
+  \end{tinySection*}
+
+  \begin{tinySection*}{Hobbies}
+  	hobbies you have
+  \end{tinySection*}
+
+\end{curvit}
+\end{document}
